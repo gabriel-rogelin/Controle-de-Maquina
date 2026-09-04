@@ -2,7 +2,8 @@ programa {
   funcao inicio() {
 
     verificarStatus()
-
+    registrarProducao()
+    
   }
 
   funcao verificarStatus(){
@@ -18,6 +19,14 @@ programa {
     } senao {
       escreva("Status: Temperatura elevada!")
     }
+  }
 
+  funcao registrarProducao(){
+    inteiro pecas 
+
+    escreva("Digite a quantidade de peças produzidas")
+    leia(pecas)
+
+    escreva("Produção registrada: ", pecas, " peças.")
   }
 }
